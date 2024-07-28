@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 20px;
+  background-color: green;
+}
+#headcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+#again-btn {
+  width: 15%;
+  height: 40px;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  border: 0;
+}
+
+#head-h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 40px;
+  font-size: 1.5em;
+  color: white;
+  background-color: green;
+}
+#head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  width: auto;
+  height: 40px;
+  font-size: 1.5em;
+  color: white;
+}
+#head h3 {
+  background-color: white;
+  color: black;
+  width: auto;
+  padding: 5px;
+  height: 40px;
+}
+input {
+  width: 150px;
+  height: 80px;
+  font-size: 1.5em;
+  text-align: center;
+}
+#check-btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  font-size: 1.5em;
+  color: white;
+  background-color: green;
+  margin-top: 10px;
+  border: 4px solid white;
+}
+#check-btn:hover {
+  background-color: chartreuse;
+}
+#footer-contain {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+#input-tab {
+  display: flex;
+  flex-direction: column;
+}
+#footer-contain label {
+  color: white;
+  font-size: 1.5em;
+}
+#footer-contain p {
+  display: inline-block;
+  color: white;
+  font-size: 1.5em;
+}
