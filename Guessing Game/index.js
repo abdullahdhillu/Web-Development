@@ -1,3 +1,5 @@
+//My First Project. Might not be upto your expectations
+
 const inputField = document.querySelector("#input-bx");
 const clickBtn = document.querySelector("#check-btn");
 const score = document.querySelector("#score");
