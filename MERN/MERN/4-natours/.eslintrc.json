@@ -1,0 +1,47 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "extends": ["airbnb-base", "prettier", "eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error", // Ensure code adheres to Prettier formatting
+    "no-console": "off", // Allow using console logs (useful in development)
+    "consistent-return": "warn", // Warn for inconsistent return values
+    "func-names": "off", // Allow unnamed functions
+    "object-shorthand": "warn", // Prefer shorthand for objects but not enforceable
+    "no-process-exit": "off", // Allow using process.exit
+    "no-param-reassign": [
+      "warn",
+      {
+        "props": false
+      }
+    ], // Allow reassigning function parameters but warn for property changes
+    "no-return-await": "warn", // Warn for unnecessary return await usage
+    "no-underscore-dangle": "off", // Allow variables with underscores (common in MongoDB)
+    "class-methods-use-this": "off", // Allow class methods not using `this`
+    "prefer-destructuring": ["warn", { "object": true, "array": false }], // Encourage object destructuring
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "req|res|next" // Ignore common Express.js params
+      }
+    ],
+    "spaced-comment": "warn", // Warn for unspaced comments
+    "arrow-body-style": "off", // Allow flexibility with arrow function bodies
+    "no-multi-assign": "off", // Allow multiple variable assignments
+    "import/prefer-default-export": "off", // Avoid forcing default exports
+    "no-use-before-define": [
+      "warn",
+      { "functions": false, "classes": true } // Allow functions before definition but warn for classes
+    ],
+    "node/no-unpublished-require": "off", // Useful for devDependencies like testing libraries
+    "node/no-missing-require": "warn" // Warn for missing imports or requires
+  }
+}
